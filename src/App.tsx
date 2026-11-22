@@ -330,15 +330,24 @@ export default function App() {
       )}
 
       {/* Top-Left Minimal Architectural Location Header */}
-      <header className="pointer-events-none absolute top-3 left-3 z-20 max-w-[min(460px,84vw)] rounded-xl bg-slate-950/90 border border-slate-800 px-3.5 py-2.5 shadow-lg">
-        <div className="flex items-center gap-2 text-[11px] font-semibold tracking-wide text-emerald-400">
-          <Compass className="w-3.5 h-3.5 shrink-0" />
-          <span className="truncate">CONTACT EXPRESS 3D · NOVEMBRE 1990</span>
+      <header className="pointer-events-none absolute top-3 left-3 z-20 max-w-[min(460px,84vw)] rounded-xl bg-slate-950/90 border border-slate-800 px-3 py-2.5 shadow-lg">
+        <div className="flex items-center gap-2.5">
+          <img
+            src="./icon.jpg"
+            alt="Contact Express 3D"
+            className="w-10 h-10 shrink-0 rounded-xl shadow-md object-cover border border-slate-700/80"
+          />
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wide text-emerald-400">
+              <Compass className="w-3.5 h-3.5 shrink-0" />
+              <span className="truncate">CONTACT EXPRESS 3D · NOVEMBRE 1990</span>
+            </div>
+            <h1 className="mt-0.5 text-sm font-semibold text-slate-100 truncate">
+              {hud.zoneName}
+            </h1>
+            <p className="text-xs text-slate-400 truncate">{hud.zoneSubtitle}</p>
+          </div>
         </div>
-        <h1 className="mt-0.5 text-sm font-semibold text-slate-100 truncate">
-          {hud.zoneName}
-        </h1>
-        <p className="text-xs text-slate-400 truncate">{hud.zoneSubtitle}</p>
         <div className="mt-1.5 pt-1.5 border-t border-slate-800/90 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-slate-300 font-mono">
           <span className="text-amber-300 font-semibold">
             Portefeuille : {formattedCash} ₣
