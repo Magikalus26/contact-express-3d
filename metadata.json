@@ -1,0 +1,6 @@
+{
+  "name": "Contact Express 3D — Supermarché & Konbini",
+  "description": "Visite architecturale 3D à la première personne d'un supermarché de proximité français et konbini avec parking extérieur, 11 rayons détaillés, caisses, bureau du gérant et entrepôt avec quai de livraison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
